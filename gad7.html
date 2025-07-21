@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GAD-7 Anxiety Assessment</title>
+  <link rel="stylesheet" href="gad7.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GAD-7 Anxiety Assessment</h1>
+    <p>Over the last 2 weeks, how often have you been bothered by the following problems?</p>
+    
+    <form id="gadForm">
+      <!-- Repeat this question format for q1 to q7 -->
+      <div class="question">
+        <label>1. Feeling nervous, anxious, or on edge</label><br>
+        <label><input type="radio" name="q1" value="0"> Not at all</label>
+        <label><input type="radio" name="q1" value="1"> Several days</label>
+        <label><input type="radio" name="q1" value="2"> More than half the days</label>
+        <label><input type="radio" name="q1" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>2. Not being able to stop or control worrying</label><br>
+        <label><input type="radio" name="q2" value="0"> Not at all</label>
+        <label><input type="radio" name="q2" value="1"> Several days</label>
+        <label><input type="radio" name="q2" value="2"> More than half the days</label>
+        <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>3. Worrying too much about different things</label><br>
+        <label><input type="radio" name="q3" value="0"> Not at all</label>
+        <label><input type="radio" name="q3" value="1"> Several days</label>
+        <label><input type="radio" name="q3" value="2"> More than half the days</label>
+        <label><input type="radio" name="q3" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>4. Trouble relaxing</label><br>
+        <label><input type="radio" name="q4" value="0"> Not at all</label>
+        <label><input type="radio" name="q4" value="1"> Several days</label>
+        <label><input type="radio" name="q4" value="2"> More than half the days</label>
+        <label><input type="radio" name="q4" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>5. Being so restless that it is hard to sit still</label><br>
+        <label><input type="radio" name="q5" value="0"> Not at all</label>
+        <label><input type="radio" name="q5" value="1"> Several days</label>
+        <label><input type="radio" name="q5" value="2"> More than half the days</label>
+        <label><input type="radio" name="q5" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>6. Becoming easily annoyed or irritable</label><br>
+        <label><input type="radio" name="q6" value="0"> Not at all</label>
+        <label><input type="radio" name="q6" value="1"> Several days</label>
+        <label><input type="radio" name="q6" value="2"> More than half the days</label>
+        <label><input type="radio" name="q6" value="3"> Nearly every day</label>
+      </div>
+
+      <div class="question">
+        <label>7. Feeling afraid as if something awful might happen</label><br>
+        <label><input type="radio" name="q7" value="0"> Not at all</label>
+        <label><input type="radio" name="q7" value="1"> Several days</label>
+        <label><input type="radio" name="q7" value="2"> More than half the days</label>
+        <label><input type="radio" name="q7" value="3"> Nearly every day</label>
+      </div>
+
+      <button type="submit">Calculate Score</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="gad7.js"></script>
+</body>
+</html>
